@@ -4,6 +4,11 @@ from . import bp
 
 
 @bp.route("/")
-@bd.route("/index")
+@bp.route("/index")
 def tracker_index():
     return render_template("index.html", page_title="Trackers")
+
+
+@bp.route("/PE_workout")
+def PE_workout():
+    return render_template("PE_workout.html", page_title="PE Workout")

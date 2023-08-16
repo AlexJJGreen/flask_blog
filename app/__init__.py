@@ -30,6 +30,10 @@ def create_app():
 
     app.register_blueprint(editor_bp, url_prefix="/editor")
 
+    from app.trackers import bp as trackers_bp
+
+    app.register_blueprint(trackers_bp, url_prefix="/trackers")
+
     return app
 
 
