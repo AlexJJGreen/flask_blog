@@ -30,3 +30,12 @@ class Content(db.Model):
     snippet = db.Column(db.String(280), index=True)
     thumbnail_url = db.Column(db.String(280), index=True)
     content = db.Column(db.Text)
+
+
+class PE_Workout(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    date = db.Column(db.DateTime, nullable=False)
+    weight = db.Column(db.Integer, primary_key=True)
+    unit = db.Column(db.String(3), index=True)
+    duration = db.Column(db.Integer, primary_key=True)
+    sets = db.Column(db.Integer, primary_key=True)
