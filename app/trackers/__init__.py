@@ -8,4 +8,4 @@ bp = Blueprint(
     static_url_path="/static",
 )
 
-from . import views
+from . import routes

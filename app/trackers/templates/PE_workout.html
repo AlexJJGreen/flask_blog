@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Trackers
+PE Workout
 {% endblock %}
 {% block styles %}
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
@@ -10,5 +10,17 @@ Trackers
 
 
 {% block content %}
-TEST
+<form action="" method="post">
+    <h2>PE Workout</h2>
+    <!--
+    date = db.Column(db.DateTime, nullable=False)
+    weight = db.Column(db.Integer, primary_key=True)
+    unit = db.Column(db.String(3), index=True)
+    duration = db.Column(db.Integer, primary_key=True)
+    sets = db.Column(db.Integer, primary_key=True)
+    -->
+    <label for="date-input">Date</label>
+    <input type="date" name="date" id="date-input">
+    <input type="button" value="Submit">
+</form>
 {% endblock %}

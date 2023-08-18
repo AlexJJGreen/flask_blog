@@ -3,9 +3,8 @@ from app import db
 from . import bp
 
 
-@bp.route("/")
 @bp.route("/index")
-def tracker_index():
+def index():
     return render_template("index.html", page_title="Trackers")
 
 
